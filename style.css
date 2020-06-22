@@ -374,7 +374,8 @@ body.content_type_curso_SANPTprovisional #actividad .content img {
 .bck-title1,.bck-title2 {
     font-weight: 700;
     color: #44913a;
-    margin: 20px 0
+    margin: 20px 0;
+    display: block;
 }
 
 .bck-title2 {

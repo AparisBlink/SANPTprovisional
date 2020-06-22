@@ -359,9 +359,16 @@ body.content_type_curso_SANPTprovisional #actividad .content img {
 .bck-title1 {
     font-size: 35px;
     background: initial;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
+    -moz-text-shadow: none;
+    -webkit-text-shadow: none;
     text-shadow: none;
-    font-family: Source Sans Pro
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: inherit;
+    letter-spacing: 0;
+    padding: inherit;
 }
 
 .bck-title1,.bck-title2 {
@@ -410,7 +417,8 @@ body.content_type_curso_SANPTprovisional #actividad .content img {
 
 .bck-box {
     margin: 20px 0;
-    padding: 10px 20px
+    padding: 10px 20px;
+    border:0;
 }
 
 .bck-box .bck-content p:last-child,.bck-box p:last-of-type {
@@ -465,12 +473,15 @@ body.content_type_curso_SANPTprovisional #actividad .content img {
     -moz-border-radius: 22px;
     -webkit-border-radius: 22px;
     border-radius: 22px;
-    transform: rotate(0deg)
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
-.bck-box.bck-box3~.bck-title {
-    padding-top: 40px
-}
+
 
 .bck-box.bck-box3 .bck-content {
     margin-top: 0
@@ -485,9 +496,17 @@ body.content_type_curso_SANPTprovisional #actividad .content img {
     padding: 12px 20px;
     box-shadow: none;
     border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     border-radius: 0;
     position: relative;
-    margin: 13px auto -30px
+    margin: -10px auto 10px auto;
+    top: inherit;
+    left: inherit;
+    -moz-transform: none;
+    -webkit-transform: none;
+    transform: none;
+    display: inherit;
 }
 
 .bck-box4 .bck-title {
@@ -568,14 +587,19 @@ body.content_type_curso_SANPTprovisional #actividad .content img {
 
 .cke_contents .bck-ol li,.content .bck-ol li {
     list-style-type: none;
-    padding-left: 43px;
+    padding-left: 35px;
     margin-bottom: 16px;
     counter-increment: bck-li-counter;
     position: relative;
-    line-height: 1.1rem
+    line-height: 1.1rem;
+    margin: inherit;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
-.cke_contents .bck-ol li:before,.content .bck-ol li:before {
+
+.cke_contents .bck-ol li:before, .content .bck-ol li:before {
     content: counter(bck-li-counter);
     position: absolute;
     top: -1px;
@@ -589,7 +613,8 @@ body.content_type_curso_SANPTprovisional #actividad .content img {
     text-align: center;
     -webkit-border-radius: 20%;
     -moz-border-radius: 20%;
-    border-radius: 20%
+    border-radius: 20%;
+    line-height: initial;
 }
 
 .cke_contents .bck-ol1 li:before,.content .bck-ol1 li:before {
@@ -1836,12 +1861,26 @@ body:not(.edit).unittag_santillanaportugalhistoria .front .bck-flipbox-section,b
     }
 }
 
-.content_type_curso_SANPTprovisional .cke_contents .bck-ol1 li:before,.content_type_curso_SANPTprovisional .cke_contents ol li:before,.content_type_curso_SANPTprovisional .content .bck-ol1 li:before,.content_type_curso_SANPTprovisional .content ol li:before {
+.content_type_curso_SANPTprovisional .cke_contents .bck-ol1 li:before,
+.content_type_curso_SANPTprovisional .cke_contents ol li:before,
+.content_type_curso_SANPTprovisional .content .bck-ol1 li:before,
+.content_type_curso_SANPTprovisional .content ol li:before {
     border: initial;
     box-shadow: none
 }
 
-.cke_contents ol li:before,.content ol li:before {
+.cke_contents ol li:before,
+.content ol li:before {
+    content: inherit;
     background: initial;
     color: inherit
+}
+
+.cke_contents ol li,
+ .content ol li {
+    list-style: decimal;
+    counter-increment: bck-li-counter;
+    position: relative;
+    margin-left: 19px;
+    padding-left: 0;
 }

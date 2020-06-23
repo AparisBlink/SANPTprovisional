@@ -895,8 +895,8 @@ body:not(.edit) .bck-flipbox-face.back {
 }
 
 #actividad .player.audio,#actividad .player.video,#help-panel-content .player,#remote-alert-modal-rich .player {
-    background-image: url(../../../images/shared/multimedia-icons.png);
-    /* background-position:25px 0; */
+    background-image: url(/themes/responsive/images/shared/multimedia-icons.png);
+    background-position: 27px 0;
     background-color: #44913a;
 }
 
